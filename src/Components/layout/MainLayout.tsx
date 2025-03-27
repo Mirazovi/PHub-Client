@@ -29,7 +29,7 @@ const MainLayout = () => {
             {
               key: 'Dashboard',
               icon: <UserOutlined />,
-              label: <NavLink to={'/admin'}>Dashboard</NavLink>,
+              label: <NavLink to={'/'}>Dashboard</NavLink>,
             },
             {
               key: 'User Management',
@@ -39,17 +39,17 @@ const MainLayout = () => {
                 {
                   key: 'Create Admin',
                   icon: <UploadOutlined />,
-                  label: <NavLink to={'/admin/create-admin'}>Create Admin</NavLink>,
+                  label: <NavLink to={'/create-admin'}>Create Admin</NavLink>,
                 },
                 {
                   key: 'Create Faculty',
                   icon: <UploadOutlined />,
-                  label: <NavLink to={'/admin/create-faculty'}>Create Faculty</NavLink>,
+                  label: <NavLink to={'/create-faculty'}>Create Faculty</NavLink>,
                 },
                 {
                   key: 'Create Student',
                   icon: <UploadOutlined />,
-                  label: <NavLink to={'/admin/create-student'}>Create Student</NavLink>,
+                  label: <NavLink to={'/create-student'}>Create Student</NavLink>,
                 },
               ]
             },
