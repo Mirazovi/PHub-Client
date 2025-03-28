@@ -25,11 +25,59 @@ const MainLayout = () => {
           theme="dark"
           mode="inline"
           defaultSelectedKeys={['1']}
+          // items={[
+          //   {
+          //     key: 'Dashboard',
+          //     icon: <UserOutlined />,
+          //     label: <NavLink to={'/'}>Dashboard</NavLink>,
+          //   },
+          //   {
+          //     key: 'User Management',
+          //     icon: <VideoCameraOutlined />,
+          //     label: 'User Management',
+          //     children:[
+          //       {
+          //         key: 'Create Admin',
+          //         icon: <UploadOutlined />,
+          //         label: <NavLink to={'/create-admin'}>Create Admin</NavLink>,
+          //       },
+          //     ]
+          //   },
+          //   {
+          //     key: '3',
+          //     icon: <UploadOutlined />,
+          //     label: 'Profile',
+          //   },
+          // ]}
+          // items={[
+          //   {
+          //     key: 'Dashboard',
+          //     icon: <UserOutlined />,
+          //     label: <NavLink to={'/faculty'}>Faculty Dashboard</NavLink>,
+          //   },
+          //   {
+          //     key: 'User Management',
+          //     icon: <VideoCameraOutlined />,
+          //     label: 'User Management',
+          //     children:[
+          //       {
+          //         key: 'Create Faculty',
+          //         icon: <UploadOutlined />,
+          //         label: <NavLink to={'create-faculty'}>Create Faculty</NavLink>,
+          //       },
+          //     ]
+          //   },
+          //   {
+          //     key: '3',
+          //     icon: <UploadOutlined />,
+          //     label: 'Profile',
+          //   },
+          // ]}
           items={[
             {
               key: 'Dashboard',
               icon: <UserOutlined />,
-              label: <NavLink to={'/'}>Dashboard</NavLink>,
+              label: <NavLink to={'/student'}>Student Dashboard</NavLink>,
             },
             {
               key: 'User Management',
@@ -37,19 +85,9 @@ const MainLayout = () => {
               label: 'User Management',
               children:[
                 {
-                  key: 'Create Admin',
-                  icon: <UploadOutlined />,
-                  label: <NavLink to={'/create-admin'}>Create Admin</NavLink>,
-                },
-                {
                   key: 'Create Faculty',
                   icon: <UploadOutlined />,
-                  label: <NavLink to={'/create-faculty'}>Create Faculty</NavLink>,
-                },
-                {
-                  key: 'Create Student',
-                  icon: <UploadOutlined />,
-                  label: <NavLink to={'/create-student'}>Create Student</NavLink>,
+                  label: <NavLink to={'create-student'}>Create Student</NavLink>,
                 },
               ]
             },
